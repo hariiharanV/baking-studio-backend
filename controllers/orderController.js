@@ -5,7 +5,9 @@ import Stripe from 'stripe'
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 
-const frontend_url = "http://127.0.0.1:5173";
+//const frontend_url = "http://127.0.0.1:5173";
+
+const frontend_url = "https://baking-studio-frontend.onrender.com";
 
 // placing user order from frontend
 const placeOrder = async(req,res)=>{
